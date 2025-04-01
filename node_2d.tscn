@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://jnb0nwf4q7hh"]
+
+[ext_resource type="PackedScene" uid="uid://byt2d3wbrgx3m" path="res://player.tscn" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://ciae34l266mnd" path="res://paret.tscn" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://bfapjqexwof2b" path="res://area2d.tscn" id="4_0hol4"]
+
+[node name="game" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_0e48y")]
+
+[node name="Area2D" parent="." instance=ExtResource("4_0hol4")]
+position = Vector2(194, 288)
+
+[node name="Parets" type="Node2D" parent="."]
+
+[node name="StaticBody2D2" parent="Parets" instance=ExtResource("2_epypp")]
+position = Vector2(686, 124)
+scale = Vector2(2, 2)
+
+[node name="StaticBody2D3" parent="Parets" instance=ExtResource("2_epypp")]
+position = Vector2(760, 418)
+
+[node name="StaticBody2D" parent="Parets" instance=ExtResource("2_epypp")]
+position = Vector2(454, 132)
