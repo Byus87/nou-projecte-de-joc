@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cp86i4vt381m6"]
+
+[node name="MarginContainer" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Labelpunts" type="Label" parent="VBoxContainer"]
+layout_mode = 2

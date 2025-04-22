@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://4gdg5jf28hg5"]
+
+[ext_resource type="Texture2D" uid="uid://b1vdjmmnbbx1v" path="res://gran_barcelona_505459465_10175059_1706x960.webp" id="1_4mwws"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(976.5, 518)
+scale = Vector2(1.13775, 1.07917)
+texture = ExtResource("1_4mwws")

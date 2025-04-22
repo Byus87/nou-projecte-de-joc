@@ -1,10 +1,15 @@
 extends Area2D
+@export var color_sortida= Color (0.823529, 0.411765, 0.117647, 1)
+
+signal burger_agafada
+
+func _ready() -> void:
+	connect("body_entered", Callable(self, "_on_body_entered"))
 
 
 
-func _on_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
-
-
-func _on_body_entered(body: Node2D) -> void:
-	$ColorRect.color= Color (1,0,0) 
+func _on_body_entered(_body: Node2D) -> void:
+	emit_signal("burger_agafada")
+	queue_free()
+	
+	

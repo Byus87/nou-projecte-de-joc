@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://7iquop0arodn"]
+
+[ext_resource type="PackedScene" uid="uid://ciae34l266mnd" path="res://paret.tscn" id="1_rysl0"]
+[ext_resource type="Texture2D" uid="uid://cpnjmsjlmax8v" path="res://a35046.png" id="2_qwhqn"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rysl0"]
+load_path = "res://.godot/imported/istockphoto-1002801182-612x612.jpg-7b64db3e07a52ff4c9849e479962a45d.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rysl0"]
+size = Vector2(834.5, 34)
+
+[node name="StaticBody2D" instance=ExtResource("1_rysl0")]
+constant_linear_velocity = Vector2(1980, 970)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." index="0"]
+position = Vector2(418.5, 2.25)
+scale = Vector2(0.721552, 0.0288793)
+texture = ExtResource("2_qwhqn")
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(-60, -54)
+texture = SubResource("CompressedTexture2D_rysl0")
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(419, 1)
+shape = SubResource("RectangleShape2D_rysl0")

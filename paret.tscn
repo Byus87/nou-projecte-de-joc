@@ -1,22 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://ciae34l266mnd"]
+[gd_scene load_steps=3 format=3 uid="uid://ciae34l266mnd"]
+
+[ext_resource type="Texture2D" uid="uid://b63o1x8pb6fed" path="res://istockphoto-1002801182-612x612.jpg" id="1_4kk7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e4iag"]
-size = Vector2(40, 40)
+size = Vector2(92, 83)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.149918, 0.204434)
+texture = ExtResource("1_4kk7u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_e4iag")

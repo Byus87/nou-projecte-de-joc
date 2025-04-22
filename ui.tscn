@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dieubg3m645le"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Punts" type="Label" parent="."]
+offset_right = 61.0
+offset_bottom = 23.0
+text = "PUNTS: "

@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var velocitat := 200
+var massa = 5
 
 func _ready() -> void: 
 	position = Vector2 (0,0)
@@ -12,7 +13,9 @@ func _process (delta: float) -> void:
 	velocity = direccio * velocitat
 	move_and_slide()
 	anima(velocity,delta)
+	
 func anima (velocitat: Vector2, delta: float) -> void:
 	var velocitat_angular := 0.05
-	$pare/fill2.rotation += velocitat_angular * velocitat.x * delta
-	$pare/fill .rotation += velocitat_angular * velocitat.x * delta
+
+
+	
